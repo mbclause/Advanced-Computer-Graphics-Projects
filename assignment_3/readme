@@ -1,0 +1,11 @@
+* Usage: ./assignment_3 e/t/r stepSize
+
+* Name: Michael Clausen
+
+* Collaberators: Jacob Re
+
+* Resources: My only resources were the professor and the slides.
+
+* Problems: All of the sections of the code up until the ClothSystem work very well, just as intended. However, the ClothSystem proved to be very tricky, as we were only able to get some of the particles and some of the structural springs (this was what we were directed to do first for this assignment). As we can see in the ClothSystem.cpp file, we have some things that are implemented and some that are not. Mainly, we were able to implement the constructor to create the structural springs between the particles, the evalF to compute forces, and the draw function to draw some of the points and the structural springs. However, we were not able to implement the computeStructuralForces, computeShearForces, computeFlexForces, or the shear and flex springs between the particles (in the constructor). In the end, we were able to get some of the particles to display, but not all of them - there should have been 3x3 = 9 particles, but only 4-5 would appear. As such, when we drew the structural springs, the only springs that were drawn were between the 4-5 points that did appear. These points and spring lines are somewhat hard to see, but are still visible. While they do not really look like a "net" or a cloth at all, they still move around in a spring-like fashion between the points, following similar physics to that of the pendulumSystem
+
+* Comments: No comments
