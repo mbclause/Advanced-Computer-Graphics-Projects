@@ -53,6 +53,24 @@ This repository contains four programming assignments for **CPSC 566 – Advance
 - Skinning mostly works, but **some artifacts or inaccuracies may occur** depending on the model.
 - Error handling is minimal — malformed data files may crash the program.
 
+### 🧵 Assignment 3 – Cloth Simulation with Particle Systems
+*Folder: `assignment_3`*
+
+Developed by **Michael Clausen** in collaboration with **Jacob Re**, this assignment extends the particle system to simulate cloth physics. The project implements:
+
+- Structural spring generation between particles
+- Force evaluation using basic spring dynamics
+- Partial rendering of the cloth mesh
+
+⚠️ **Known Limitations:**
+- The implementation only includes **structural springs**; **shear** and **flex springs** are not fully implemented.
+- Functions such as `computeShearForces` and `computeFlexForces` remain unimplemented.
+- Some particles and springs render correctly, but the overall cloth behavior is incomplete.
+
+Despite these challenges, the project demonstrates a solid understanding of particle system mechanics and spring-based force modeling.
+
+---
+
 ✅ **Usage:**
 ```bash
 make
