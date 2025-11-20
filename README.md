@@ -1,6 +1,6 @@
 # Advanced Computer Graphics Projects
 
-This repository contains four programming assignments for **CPSC 566 – Advanced Computer Graphics** at CSUF. Each project explores a core graphics concept using **C++** and **OpenGL**, including hierarchical modeling, skeletal animation, and physical simulations.
+This repository contains four programming assignments for **CPSC 566 – Advanced Computer Graphics** at CSUF. Each project explores a core graphics concept using **C++** and **OpenGL**, including curve modeling and swept-surface generation, hierarchical modeling, skeletal animation, and physical simulations.
 
 > 💡 Many of the projects were built on a base code framework provided by the professor. Student contributors implemented and debugged required components as outlined in each assignment.
 
