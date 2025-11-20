@@ -24,18 +24,53 @@ This repository contains four programming assignments for **CPSC 566 – Advance
 ---
 
 ### `assignment_1`
+Topic: Curve modeling (Bézier & B-spline) + swept surfaces (surface of revolution & generalized cylinder)
+Contributors: Michael Clausen, Jacob Re, Sonal Mogra
+Base Code: Provided by instructor; curve/surface evaluation and parsing implemented by students
 
-**Topic:** Hierarchical modeling using a matrix stack  
-**Contributors:** Michael Clausen, Jacob Re, Sonal Mogra  
-**Base Code:** Provided by instructor
+What it does
 
-- Implements a hierarchical articulated model (e.g., robot or creature).
-- Uses custom matrix stack logic to apply transformations.
-- Adds user controls to manipulate limb positions.
+* Cubic Bézier (bez2, bez3) and uniform cubic B-spline (bsp2, bsp3) evaluation via basis-matrix formulation (curve.cpp, curve.h).
 
-✅ **Status:** Fully working  
-🔧 Implemented core functionality for drawing and controlling the hierarchical model.
+* Builds per-sample Frenet frames (T, N, B) along the curve; includes a circle primitive (circ).
 
+* Surface of Revolution (rev): sweeps a 2D profile about the y-axis.
+
+* Generalized Cylinder (gcyl): sweeps a 2D/3D path with a 2D profile (partial implementation).
+
+* SWP file parser (parse.cpp/.h) to define curves/surfaces; OBJ export for generated surfaces.
+
+* OpenGL viewer with toggles for curves, surfaces, and control points.
+
+Controls
+
+* Space – reset camera
+
+* c/C – cycle curve display (off/lines/frames)
+
+* s/S – cycle surface display (off/wireframe/shaded)
+
+* p/P – toggle control points
+
+Known limitations (from project notes)
+
+* Surfaces may show chunky cylinders / visible segmentation; normals may vary between profile control points.
+
+* Some cylinders show a hole at a profile control point (first/last CP edge case).
+
+* Surface of revolution may produce extra/stray surface patches outside the intended profile in some cases.
+
+* Error handling for malformed inputs is minimal.
+
+Key files
+
+* curve.cpp/.h – Bézier/B-spline evaluation, circle, frame construction, drawing
+
+* surf.cpp/.h – surface of revolution & generalized cylinder, OBJ output
+
+* parse.cpp/.h – SWP parser (curves/surfaces)
+
+* main.cpp – viewer, input handling, display lists
 ---
 
 ### `assignment_2`
