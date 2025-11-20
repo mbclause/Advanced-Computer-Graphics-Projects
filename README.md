@@ -24,11 +24,11 @@ This repository contains four programming assignments for **CPSC 566 – Advance
 ---
 
 ### `assignment_1`
-Topic: Curve modeling (Bézier & B-spline) + swept surfaces (surface of revolution & generalized cylinder)
-Contributors: Michael Clausen, Jacob Re, Sonal Mogra
-Base Code: Provided by instructor; curve/surface evaluation and parsing implemented by students
+#### Topic: Curve modeling (Bézier & B-spline) + swept surfaces (surface of revolution & generalized cylinder)
+#### Contributors: Michael Clausen, Jacob Re, Sonal Mogra
+#### Base Code: Provided by instructor; curve/surface evaluation and parsing implemented by students
 
-What it does
+####What it does
 
 * Cubic Bézier (bez2, bez3) and uniform cubic B-spline (bsp2, bsp3) evaluation via basis-matrix formulation (curve.cpp, curve.h).
 
